@@ -1,7 +1,10 @@
-#Moments API
+# Moments API
+
 API desenvolvida para projeto de conclusão do curso Angular 13 de Matheus Battisti.
 
 ![Badge Concluido](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge)
+
+Utilizado nesse projeto: 
 
 <div>
     <img src="https://img.shields.io/badge/adonisjs-%23220052.svg?style=for-the-badge&logo=adonisjs&logoColor=white"/>
@@ -11,7 +14,7 @@ API desenvolvida para projeto de conclusão do curso Angular 13 de Matheus Batti
 </div>
 
 
-#Menu
+# Menu
 - [Sobre o Sistema](#sobre-o-sistema)
 - [Funcionalidades](#funcionalidades)
 - [Moments](#moments)
