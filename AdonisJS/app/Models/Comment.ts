@@ -12,7 +12,7 @@ export default class Comment extends BaseModel {
   public text: string
 
   @column()
-  public momentsID: number
+  public momentId: number
 
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime
