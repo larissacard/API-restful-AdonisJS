@@ -1,1 +1,15 @@
-<p>home works!</p>
+<div class="home-container">
+    <h1>Veja o que estão compartilhando</h1>
+    <div *ngIf="moment.length > 0; else noMoments">
+        <div *ngFor="let moment of moment">
+            <img src="{{baseApiUrl}}uploads/{{moment.image}}" alt="{{moment.title}}">
+            <h3>{{moment.title}}</h3>
+            <p class="date">Em: {{moment.create_at}}</p>
+            <p>Comentários: {{moment.comments!.length}}</p>
+            <p><a routerLink="moments/{{moment.id}}">Detalhes</a></p>
+        </div>
+    </div>
+    <ng-template #noMoments>
+        <h1>Não há Momentos cadastrados!</h1>
+    </ng-template>
+</div>
