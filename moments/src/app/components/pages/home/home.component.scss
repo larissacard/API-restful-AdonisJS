@@ -1,0 +1,42 @@
+#main {
+    width: 100vw;
+    height: 100vh;
+  
+    display: flex;
+    overflow: hidden;
+}
+
+.home-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.moments-container {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+
+    margin-top: 20px;
+    margin-bottom: 90px;
+
+   height: 85vh;
+   overflow-y: scroll;
+
+    .moments {
+        line-height: 0;
+        column-count: 3;
+        column-gap: 30px;
+
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .21);
+            border: 10px solid #444;
+        }
+    }
+}
+
+.destaque {
+    color: #dec129;
+}
