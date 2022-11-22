@@ -16,7 +16,6 @@
     display: inline-block;
     padding: 20px;
 
-    margin-top: 20px;
     margin-bottom: 90px;
 
    height: 85vh;
@@ -30,13 +29,53 @@
         img {
             width: 100%;
             height: auto;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .21);
             border: 10px solid #444;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h3 {
+            position: relative;
+            top: -15px;
+            text-decoration: none;
+        }
+
+        h3:hover {
+            color: #dec129;
         }
     }
 }
 
 .destaque {
     color: #dec129;
+}
+
+.search-container {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.search-container form {
+    width: 30%;
+    position: relative;
+}
+
+.search-container fa-icon {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.search-container input {
+    padding: 0.5em;
+    width: 100%;
+    text-align: center;
 }

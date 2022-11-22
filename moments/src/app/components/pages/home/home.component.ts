@@ -13,6 +13,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons'
 })
 export class HomeComponent implements OnInit {
   faSearch = faSearch;
+  searchTerm!: string;
 
   allMoments: Moment[] = []
   moment: Moment[] = []
@@ -32,6 +33,15 @@ export class HomeComponent implements OnInit {
 
       this.allMoments = data;
       this.moment = data;
+    })
+  }
+
+  search(e: Event){
+    const target = e.target as HTMLInputElement
+    const value = target.value
+
+    this.moment = this.allMoments.filter((moment) => {
+     return moment.title.toLocaleLowerCase().includes(value)
     })
   }
 
