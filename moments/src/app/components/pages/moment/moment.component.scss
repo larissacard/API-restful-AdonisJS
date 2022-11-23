@@ -1,4 +1,4 @@
-#main {
+#main, main {
     width: 100vw;
     height: 100vh;
   
@@ -6,71 +6,105 @@
     overflow: hidden;
 }
 
-.moment-container{
+.moment-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.moment {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #444;
+
+  h2, h3, p {
+    color: #fff;
+  }
+
+  h1 {
+    padding-top: 0px;
+  }
+
+  h2 {
+    padding-bottom: 2em;
+    color: #dec129;
+  }
+
+  .info {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    width: 90%;
-    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
 
-    margin-left: 10vw;
+    
+    .about-moment{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+
+    .about-moment p {
+      width: 20em;
+      padding: .2em;
+    }
+
+  }
 }
 
-img {
-    max-width: 30vw;
+.show-img {
+
+  img {
+    width: 30vw;
     height: auto;
-    border: 10px solid #444;
+
+    padding: 10px;
+  }
 }
 
-.info {
-   display: flex;
-   flex-direction: column;
+.comentarios {
+  margin-left: 2em;
+  text-align: left;
+  border-bottom: 1px solid #efefef;
+  padding: 1em 10em 2em;
 }
 
+.author {
+  font-size: 0.8em;
+}
 
+.about-moment h3,
+.actions h3,
+.comments h3 {
+  margin-bottom: 1em;
+}
 
+  .comment-form{
+    margin-left: 2em;
+    
+  }
 
-  
-//   h1 {
-//     margin-bottom: 1em;
-//   }
-  
-//   img {
-//     max-width: 30vw;
-//     height: auto;
-//   }
-  
-  .about-moment,
-  .actions {
-    padding-bottom: 1em;
-    border-bottom: 1px solid #ccc;
-    padding: 1.2em;
-    width: 100%;
-  }
-  
-  .actions {
-    background-color: #eee;
-  }
-  
-  .comments {
-    margin-bottom: 1em;
-    padding: 1.5em 0;
-  }
-  
-  .about-moment h3,
-  .actions h3,
-  .comments h3 {
-    margin-bottom: .5em;
-  }
-  
-//   .comment-container {
-//     text-align: left;
-//     border-bottom: 1px solid #efefef;
-//     padding: 1em 0;
-//   }
-  
-//   .comment {
-//     font-size: 0.9em;
-//   }
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: .5em;
+
+}
+
+input[type="submit"] {
+  margin-top: 1em;
+}
+
+span {
+  font-weight: bold;
+}
+
+.comment-container {
+  margin-left: -10em;
+}
