@@ -1,0 +1,15 @@
+{
+    "name": "AdonisJs",
+    "version": 2,
+    "public": true,
+    "build": {
+        "src": "commands/index.ts",
+        "use": "@vercel/node"
+    },
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "commands/index.ts"
+        }
+    ]
+}
