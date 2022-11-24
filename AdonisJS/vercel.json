@@ -3,8 +3,8 @@
     "version": 2,
     "public": true,
     "build": {
-        "use": "@vercel/node"
-    },
+        "buildCommand": "next build"
+      },
     "routes": [
         {
             "src": "/(.*)",
