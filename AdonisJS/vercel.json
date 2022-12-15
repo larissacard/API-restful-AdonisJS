@@ -1,0 +1,14 @@
+{
+    "name": "AdonisJs",
+    "version": 2,
+    "public": true,
+    "build": {
+        "buildCommand": "next build"
+      },
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "commands/index.ts"
+        }
+    ]
+}
