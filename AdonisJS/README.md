@@ -1,7 +1,5 @@
 # Moments API
 
-API desenvolvida para projeto de conclusão do curso Angular 13 de Matheus Battisti.
-
 ![Badge Concluido](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge)
 
 Utilizado nesse projeto: 
